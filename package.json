@@ -1,13 +1,21 @@
 {
-  "name": "Web Services",
+  "name": "webservices",
   "version": "1.0.0",
   "description": "Web Services",
-  "author": "Ievhenii Yunchyck",
-  "license": "MIT",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/madrogalo/webServices.git"
+    "url": "git+https://github.com/madrogalo/webServices.git"
   },
+  "author": "Ievhenii Yunchyck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/madrogalo/webServices/issues"
+  },
+  "homepage": "https://github.com/madrogalo/webServices#readme",
   "dependencies": {
     "jquery": "^3.3.1",
     "popper.js": "^1.14.4",
