@@ -1,4 +1,275 @@
-body {
-  background-color: red;
-  color: aliceblue;
+html {
+  body {
+    background-color: $white;
+    header {
+      font-family: 'Montserrat', sans-serif;
+      #heder-show-hide {
+        border: 1px solid $blue;
+        background-color: $white;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        transition: top 0.3s;
+        z-index: 9999;
+        height: 95px;
+        .navigation {
+          padding-top: 25px;
+          display: flex;
+          justify-content: flex-end;
+        }
+        .logo {
+          width: 100px;
+          height: 59px;
+          padding-top: 18px;
+        }
+        a {
+          float: right;
+          display: block;
+          color: #8a8a8a;
+          font-family: 'Montserrat';
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 28px;
+        }
+        a:hover {
+          color: $blue;
+        }
+        .show-mobile-menu {
+          display: none;
+          position: fixed;
+          top: 95px;
+          left: 0;
+          width: 100%;
+          height: calc(100% - 95px);
+          background-color: $whitecream;
+          .mobile-nav {
+            font-size: 25px;
+            padding-top: 25px;
+          }
+        }
+        .active-nemu {
+          display: block;
+          opacity: 1;
+        }
+      }
+    }
+    // section rectable
+    .rectable {
+      padding-top: 350px;
+      padding-bottom: 260px;
+
+      background-image: url(/img/banner.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      object-fit: contain;
+      background-color: black;
+      h1 {
+        color: $white;
+        font-family: 'Montserrat', 'Semi Bold';
+        font-size: 55px;
+        font-weight: 400;
+        line-height: 28px;
+      }
+      @media (max-width: 991px) {
+        h1 {
+          font-size: 35px;
+        }  
+      }
+      .description {
+        width: 638px;
+        padding-top: 25px;
+        span {
+          color:  $white;
+          font-family: 'Montserrat';
+          font-size: 18px;
+          font-style: italic;
+          line-height: 30px;
+        }
+      }
+      @media (max-width: 991px) {
+        .description {
+          width: 100%;
+        }    
+      }
+    }
+    @media (max-width: 1366px) {
+      .rectable {
+        background-size: 150%;
+        background-repeat: no-repeat;
+      }  
+    }
+    @media (max-width: 1024px) {
+      .rectable {
+        padding-top: 200px;
+        padding-bottom: 150px;
+        background-image: url(/img/banner.jpg);
+        background-size: 110%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-position-x: center;
+      }  
+    }
+    @media (max-width: 768px) {
+      .rectable {
+        padding-top: 150px;
+        padding-bottom: 59px;
+        background-image: url(/img/banner.jpg);
+        background-size: 250%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-position-x: center;
+      }  
+    }
+    // section customer-services
+    .customer-services {
+        font-family: 'Montserrat', 'Semi Bold';
+        color: $blue;
+        font-weight: 400;
+        padding-top: 105px;
+      h2 {
+        font-family: 'Montserrat', 'Semi Bold';
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 30px;
+      }
+      p {
+        padding-top: 45px;
+        font-family: 'Montserrat', 'Semi Bold';
+        color: $deepblue;
+        font-size: 16px;
+        line-height: 24px;
+
+      }
+      span {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 22px;
+      }
+      .indent-element {
+        padding-top: 65px;
+        padding-bottom: 65px;
+      }
+      @media (max-width: 425px) {
+        .indent-element {
+          padding-top: 45px;
+          padding-bottom: 45px;
+        }
+      }
+    }
+    // about us
+    .about-us {
+      font-family: 'Montserrat', 'Semi Bold';
+      color: $white;
+      font-weight: 400;
+      padding-top: 80px;
+      padding-bottom: 90px;
+      background-image: url(/img/counter-bg.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      object-fit: contain;
+      background-color: black;
+    h2 {
+      font-family: 'Montserrat', 'Semi Bold';
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 30px;
+      padding-bottom: 25px;
+    }
+    p {
+      padding-top: 10px;
+      font-family: 'Montserrat', 'Semi Bold';
+      color: $white;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    }
+    @media (max-width: 1024px) {
+      .about-us {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        background-image: url(/img/counter-bg.jpg);
+        background-size: 140%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-position-x: center;
+      }  
+    }
+    @media (max-width: 768px) {
+      .about-us {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background-image: url(/img/counter-bg.jpg);
+        background-size: 200%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-position-x: center;
+      }  
+    }
+    @media (max-width: 572px) {
+      .about-us {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background-image: url(/img/counter-bg.jpg);
+        background-size: 485%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-position-x: center;
+      }  
+    }
+  // section contact us
+    .contact-us {
+        font-family: 'Montserrat', 'Semi Bold';
+        background-color: $whitecream;
+        color: $blue;
+        font-weight: 400;
+        padding-top: 105px;
+        padding-bottom: 75px;
+      h2 {
+        font-family: 'Montserrat', 'Semi Bold';
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 30px;
+      }
+      p {
+        padding-top: 45px;
+        padding-bottom: 50px;
+        font-family: 'Montserrat', 'Semi Bold';
+        color: $deepblue;
+        font-size: 16px;
+        line-height: 24px;
+      }
+      .form-border-color {
+        border: solid 1px $blue;
+        border-radius: 5px;
+        background-color: $white;
+      }
+      .button-send {
+        padding: 7px 26px;
+        border-radius: 10px;
+        text-transform: uppercase;
+        background-color: $blue;
+      }
+    }
+  // section footer
+    footer {
+      background-color: $darkblue;
+      color: $white;
+      .padding-nav {
+        padding-top: 42px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+      .color-link {
+        color: $white;
+      }
+      .rights-reserved {
+        padding-top: 11px;
+        padding-bottom: 55px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+  }
 }
