@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     
     <!-- Useful meta tags -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
     <meta name="description" content="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel beatae quam distinctio, a officia fuga modi debitis perspiciatis pariatur, facere dolorum, voluptate sapiente nulla? Tempore doloremque molestiae harum fugiat voluptatibus.">
     <meta name="keywords" content="keywords, dolor">
     <meta name="robots" content="index, follow, noodp">
     <meta name="googlebot" content="index, follow">
     <meta name="google" content="notranslate">
     <meta name="format-detection" content="telephone=no">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet" />
     <title>Web Services</title>
@@ -66,9 +66,11 @@
 <div id="customer-services" class="customer-services">
   <div class="container">
     <div class="row">
-
       <div class="col-sm-12">
-        <h2 class="text-center text-uppercase">Customer services</h2>
+         <div class="position-headline">
+           <h2 class="text-uppercase text-center">Customer services</h2>
+         </div>
+        </div>
       </div>
       <div class="col-sm-12">
         <p class="text-center">
@@ -119,18 +121,22 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <h2 class="text-center text-uppercase">about us</h2>
+        <div class="position-headline">
+          <h2 class="text-center text-uppercase">about us</h2>
+        </div>
       </div>
       <div class="col-sm-12">
-        <p class="text-center">
-            WebServices ltd. was among the first companies offering e-commerce and professional payment processing services, modern fraud and chargeback prevention instruments and 24/7 customer support.
-        </p>
-        <p class="text-center">
-            It did not take long before WebServices ltd. took up a leading position on the market thanks to its constant development and a desire to overcome a growing competition with the aid of advanced software and customizable services.
-        </p>
-        <p class="text-center">
-            Today, every business collaborating with WebServices ltd. can see a significant growth in their revenue. The company works with businesses from all over the world aiming to meet and even exceed expectations of the customers, both existing and new ones.
-        </p>
+        <div class="text-indent">
+          <p class="text-center">
+              WebServices ltd. was among the first companies offering e-commerce and professional payment processing services, modern fraud and chargeback prevention instruments and 24/7 customer support.
+          </p>
+          <p class="text-center">
+              It did not take long before WebServices ltd. took up a leading position on the market thanks to its constant development and a desire to overcome a growing competition with the aid of advanced software and customizable services.
+          </p>
+          <p class="text-center">
+              Today, every business collaborating with WebServices ltd. can see a significant growth in their revenue. The company works with businesses from all over the world aiming to meet and even exceed expectations of the customers, both existing and new ones.
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -139,7 +145,9 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <h2 class="text-center text-uppercase">Contact us</h2>
+        <div class="position-headline">
+          <h2 class="text-center text-uppercase">Contact us</h2>
+        </div>
       </div>
       <div class="col-sm-12">
         <p class="text-center">
@@ -153,33 +161,29 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d81285.77403470749!2d30.495553456790017!3d50.45636456373809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgoogle+maps!5e0!3m2!1sru!2sua!4v1557695153504!5m2!1sru!2sua" width="100%" height="345" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         <div class="col-md-6">
-            <form>
-                <div class="form-group">
-                  <input type="name" class="form-control form-control-lg form-border-color" id="exampleFormControlInput1" placeholder="Name">
-                  <div class="invalid-feedback">
-                    Please choose a username.
-                  </div>
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control form-control-lg form-border-color" id="exampleFormControlInput2" placeholder="Email">
-                  <div class="invalid-feedback">
-                      Please choose a Email.
-                    </div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control form-control-lg form-border-color" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
-                </div>
-                <div class="d-flex align-items-end flex-column">
-                    <div class="pt-1">
-                        <button type="submit" class="btn btn-primary button-send">Send</button>
-                    </div>
-                  </div>
-              </form>
+          <form>
+            <div class="form-group">
+              <input id="name" name="text" placeholder="Name">
+              <span class="error" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <input id="mail" name="email" placeholder="Email">
+              <span class="error" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+                <textarea  id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+            </div>
+            
+            <div class="d-flex align-items-end flex-column">
+              <div class="pt-1">
+                  <button type="submit" class="btn btn-primary button-send">Send</button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
   </div>
 </div>
-
 <footer>
   <div class="container">
     <div class="row">
