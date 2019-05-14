@@ -58,7 +58,7 @@ html {
       padding-top: 350px;
       padding-bottom: 260px;
 
-      background-image: url(/img/banner.jpg);
+      background-image: url(../img/banner.jpg);
       background-size: 100%;
       background-repeat: no-repeat;
       object-fit: contain;
@@ -102,7 +102,7 @@ html {
       .rectable {
         padding-top: 200px;
         padding-bottom: 150px;
-        background-image: url(/img/banner.jpg);
+        background-image: url(../img/banner.jpg);
         background-size: 110%;
         background-repeat: no-repeat;
         object-fit: cover;
@@ -113,7 +113,7 @@ html {
       .rectable {
         padding-top: 150px;
         padding-bottom: 59px;
-        background-image: url(/img/banner.jpg);
+        background-image: url(../img/banner.jpg);
         background-size: 250%;
         background-repeat: no-repeat;
         object-fit: cover;
@@ -126,6 +126,7 @@ html {
         color: $blue;
         font-weight: 400;
         padding-top: 105px;
+        margin: 18px;
       h2 {
         font-family: 'Montserrat', 'Semi Bold';
         font-size: 25px;
@@ -180,7 +181,7 @@ html {
       font-weight: 400;
       padding-top: 80px;
       padding-bottom: 90px;
-      background-image: url(/img/counter-bg.jpg);
+      background-image: url(../img/counter-bg.jpg);
       background-size: 100%;
       background-repeat: no-repeat;
       object-fit: contain;
@@ -222,7 +223,7 @@ html {
       .about-us {
         padding-top: 120px;
         padding-bottom: 120px;
-        background-image: url(/img/counter-bg.jpg);
+        background-image: url(../img/counter-bg.jpg);
         background-size: 140%;
         background-repeat: no-repeat;
         object-fit: cover;
@@ -233,7 +234,7 @@ html {
       .about-us {
         padding-top: 100px;
         padding-bottom: 100px;
-        background-image: url(/img/counter-bg.jpg);
+        background-image: url(../img/counter-bg.jpg);
         background-size: 200%;
         background-repeat: no-repeat;
         object-fit: cover;
@@ -244,7 +245,7 @@ html {
       .about-us {
         padding-top: 100px;
         padding-bottom: 100px;
-        background-image: url(/img/counter-bg.jpg);
+        background-image: url(../img/counter-bg.jpg);
         background-size: 485%;
         background-repeat: no-repeat;
         object-fit: cover;
